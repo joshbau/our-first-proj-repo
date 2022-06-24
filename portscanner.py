@@ -51,9 +51,9 @@ total = t2 - t1
 print ('Scan Completed in:', total)
 
 #Task schedule
-#Run portscanner.py every 24 hours.
-schedule.every(5).seconds.do(pscan)
-schedule.every(5).seconds.do(redir)
+#Run portscanner.py every 12 hours.
+schedule.every(12).hours.do(pscan)
+schedule.every(12).hours.do(redir)
 
 while True:
 
